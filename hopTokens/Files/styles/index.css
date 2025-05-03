@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    display: block;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: #ebebeb;
+}
+
+/* Barra de navegação menu */
+
+.menu__navigation {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20rem;
+    position: sticky;
+    background-color: #ebebeb;
+    top: 0;
+}
+
+.menu__navigation__logo img {
+    width: 140px;
+
+}
+
+.menu__navigation__sideoptions__links__nav{
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 130%;
+    color: black; 
+    text-decoration: none;
+    padding: 1rem 1.5rem;    
+}
+
+#navbarBurger {
+    position: fixed;
+    top: 30px; /* You can adjust the top position as needed */
+    right: 60px; /* You can adjust the right position as needed */
+    font-family: bold;
+    font-size:30px ;
+
+}
+
+
+.menu__navigation__sideoptions__links__nav:hover {
+    background-color: rgba(164, 164, 164, 0.232);
+    border: 0px solid;
+    border-radius: 20px;
+}
+
+
+.menu__navigation__links{
+    justify-content: center;
+}
+
+.join-button {
+    display: inline-flex;
+    background-color: #fce44d;
+    color: #100f0e;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    line-height: 130%;
+    text-decoration: none;
+    transition: all .15s cubic-bezier(.23, 1, .32, 1);
+    box-shadow: -4px 4px 0 1px #000;
+}
+
+.join-button:hover {
+    box-shadow: none;
+    background-color: #F5DD2A;
+    border-radius: 15px;
+    border: 1px solid black;
+    transition: 0.1s;
+}
+
+/* Texto corpo */
+
+.presentation{
+    padding: 6% 16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+/* Texto de apresentação */
+.presentation__text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cabeçalho texto Hoptokens */
+.presentation__text__header{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.25;
+
+}
+
+/* Texto apresentação hoptokens */
+.presentation__text__body{
+    font-size: 1rem;
+    font-family: 'Raleway',sans-serif;
+}
+
+/* Botao ver mais */
+.button__vermais {
+    padding-top: 20px;
+    display: block;
+    text-align: left;
+}
+
+.button__vermais a {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px 60px 15px 60px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: inset;
+    box-shadow: -6px 6px;
+
+}
+
+.button__vermais a:hover {
+    box-shadow: none;
+    transition: 0.1s;
+}
+
+/* imagem ilustrativa corpo */
+
+.presentation__image{
+    width: 50%;
+}
+
+/* Barra flutuante movel */
+
+.marquee {
+    background-color: black;
+    color: yellow;
+    font-size: 100px;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    transform: rotate(2deg);
+    padding-top: 70px;
+}
+  
+.track {
+    font-family: Azareth Mono, sans-serif;
+    font-size: 60px;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+}
+  
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+
+/* Segunda parte */
+
+.secondpart {
+    padding: 6% 16%;
+    align-items: center;
+}
+
+.secondpart__header{
+    font-family: Cabin Condensed, sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: darkslategrey;
+    /* font-weight: bold; */
+    margin-bottom: 3%;
+}
+
+.secondpart__header__h{
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: raleway, sans-serif;    
+}
+
+/* imagens prod vendas1 */
+
+.store__container{
+    padding: 6% 5%;
+    margin: 6% 1%;
+}
+
+.store__pricing {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 3%;
+    gap: 10px;
+}
+
+.store__pricing__boxes {
+    border: 3px dashed black;
+    justify-content: center;
+    padding: 5% 5%;
+}
+
+.store__pricing__boxes__imagecenter__subimage {
+    display: flex;
+    font-family: Cabin Condensed, sans-serif;
+    font-size: 1.25rem;
+    gap: 10px;
+}
+
+.identify__token{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.price__token{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.button__box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    
+}
+
+.button__comprar a {
+    background-color:rgb(250, 232, 69);
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px 7px 10px 0px;
+    padding: 10px 50px 8px 50px;
+    box-shadow: inset;
+    box-shadow: -6px 6px black;
+}
+
+.button__comprar a:hover{
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+.button__beneficios a {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 10px 0px 10px 10px;
+    padding: 12px 35px 9px 35px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: inset;
+    box-shadow: -6px 6px;
+}
+
+.button__beneficios a:hover{
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+/* prod venda 2 */
+
+.store__pricing2 {
+    display: flex;
+    background-color: #3214d9;
+    justify-content: space-between;
+}
+
+.store__pricing__boxes2 {
+    border: 3px dashed black;
+    justify-content: center;
+    padding: 5% 5%;
+}
+
+.store__pricing__boxes__imagecenter__subimage2 {
+    display: flex;
+    font-family: Cabin Condensed, sans-serif;
+    font-size: 1.25rem;
+    gap: 10px;
+}
+
+.identify__token2{
+    font-size: 1.87px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.price__token2{
+    font-size: 1.87px;
+    margin-bottom: 50px;
+}
+
+/* prod venda 3 */
+
+.store__pricing3 {
+    display: flex;
+    background-color: #d2d1d5;
+    justify-content: space-between;
+}
+
+.store__pricing__boxes3 {
+    border: 3px dashed black;
+    justify-content: center;
+    padding: 5% 5%;
+}
+
+.store__pricing__boxes__imagecenter__subimage3 {
+    display: flex;
+    font-family: Cabin Condensed, sans-serif;
+    font-size: 1.25rem;
+    gap: 10px;
+}
+
+.identify__token3{
+    font-size: 1.87rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.price__token3{
+    font-size: 1.87px;
+    margin-bottom: 50px;
+}
+
+.img-ref img {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.img-ref,
+p {
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.cont-button-buy1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+
+/* parte 3 */
+
+.description{
+    display: flex;
+    border: 9px solid black ;
+    border-radius: 30px;
+    margin: 6% 12%;
+}
+
+.description__girl img{
+    border: 2px solid black;
+    margin-bottom: -5px;
+}
+
+.description__final{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f8f1c2;
+    padding: 5% 2%;
+    
+}
+
+.description__final h2{
+    font-family: cabin condensed, sans-serif;
+    font-size: 1.87rem;
+
+}
+
+/* botao box garota */
+
+.button{
+    margin: 5% 10%;
+}
+
+.button__vermais2 {
+    display: inline-flex;
+    background-color: #fce44d;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    line-height: 130%;
+    transition: all .15s cubic-bezier(.23, 1, .32, 1);
+    box-shadow: -4px 4px 0 1px #000;
+}
+
+.button__vermais2 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.button__vermais2:hover {
+    box-shadow: none;
+    background-color: #F5DD2A;
+    border-radius: 15px;
+    border: 1px solid black;
+    transition: 0.1s;
+}
+
+/* tarja rolante */
+
+
+.marquee2 {
+    background-color: black;
+    color: yellow;
+    font-size: 100px;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    padding-top: 70px;
+    margin-top: 80px;
+}
+  
+.track {
+    font-family: Azareth Mono, sans-serif;
+    font-size: 60px;
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+}
+  
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+
+/* rodape */
+
+.footer__container{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 35px;
+}
+
+.footer__container li{
+    display: inline;
+}
+
+.footer__container a img {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 15px;
+    height: 100px;
+}
+
+.footer__container__company{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__container__company,
+p2 {
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.footer__container__company {
+    margin-top: 20px;
+
+}
+
+.footer__container__company li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.footer__container__company a {
+    text-decoration: none;
+    color: white;
+}
+
+.linkemail a {
+    color: yellow;
+}
+
+
+/* Responsividade do site */
+
+
+@media (max-width: 999px){
+
+    .menu__navigation{
+        justify-content: space-around;
+        flex-direction:column;
+        text-align: center;
+        gap: 10px;
+        
+    }
+
+    .menu__navigation__sideoptions__links__nav:hover{
+        background-color:#ffffff00;
+    }
+
+
+    .presentation{
+        flex-direction: column;
+    }
+
+    .presentation__text{
+        width: auto;
+    }
+
+    .store__pricing{
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+
+    .description{
+        flex-direction: column
+    }
+
+    .description__girl img{
+        width: auto;
+    }
+
+}
+
+/* @media screen and (max-width: 768px) {
+  .menu-button {
+    display: flex;
+  }
+
+  .menu__navigation__sideoptions {
+    display: none;
+  }
+
+  .menu__navigation__sideoptions.active {
+    display: flex;
+  }
+} */
